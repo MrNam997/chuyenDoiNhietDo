@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="font-family: cursive;background-color: azure;text-align: center;border-bottom: 3px solid red;border-radius: 396px;border-top: 3px solid #c51828;font-size: x-large; "    >
+        <h2>Temperature Converter</h2>
+        <p >Chuyen doi tu nhiet do Fahrenheit sang Celcius:</p>
+        <p >Fahrenheit</p>
+        <input type="number" placeholder="Nuber Fahrenheit" oninput="TemperatureConverter(this.value)" ><br>
+        <p>Celius: <span id="outputCelius"></span></p>
+    </div>
+    <script>
+        function TemperatureConverter(valNum) {
+            valNum = parseInt(valNum);
+            document.getElementById('outputCelius').innerHTML= (valNum -32 )/ 1.8;
+        }
+    </script>
+
+
+
+</body>
+</html>
